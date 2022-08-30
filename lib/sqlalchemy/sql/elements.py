@@ -2149,7 +2149,7 @@ class TextClause(
 
     _is_textual = True
 
-    _bind_params_regex = re.compile(r"(?<![:\w\x5c]):(\w+)(?!:)", re.UNICODE)
+    _bind_params_regex = re.compile(r"(?<![:\w\x5c]):(\w+)", re.UNICODE)
     _is_implicitly_boolean = False
 
     _render_label_in_columns_clause = False
